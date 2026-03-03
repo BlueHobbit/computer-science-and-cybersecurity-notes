@@ -8,8 +8,26 @@ systeminfo --> similar to the msinfo32 executable but display the system info it
 
 more --> displays one page of output at a time - can be used with commands like systeminfo and driverquery to minimize output to one page. 
 
-Using [Space] is the best way to navigate down the list created by more
+Using [Space] is the best way to navigate down the list created by more though [Enter] can be used to go line by line instead of [Space] which goes terminal page size by terminale page size.
 
 It's worth noting as well that | works in windows cmd for piping in the same way it works for Linux from what I can see so far. 
 Is there a difference between | syntactically in Winodws CMD and Linux CLI?
 
+mkdir is pretty much the same as the Linux equivalent as far as I can tell. I wonder if certain commands are inherited by the joint UNIX heritage of Windows and Linux. 
+
+What's the difference between del and erase as commands? Does one have more functionality?
+
+rmdir is also used in Linux but doesn't work very well with nested directories or directories with contents. From what I remember rm -r is better as the -r flag recursively deletes the objects and all of the hierarchal sub-objects.
+
+The move commmand seems to work relative to the current directory, same is true for copy as I've just checked. If I use .. or . they work relative to my current directory even if the directory they are being moved/copied on isn't on the previous/next layer. 
+
+Wonderful little tip at the end that * works as a wildcard symbol for *.txt for example. Is there a difference between it's function in Linux and it's function in Windows?
+  -  I've used it plenty more times in Linux, it can be a great way for finding all the text files etc. in a directory amongst other things. 
+
+Oh and cd\ takes you to the root directory on Windows CMD, found out by checking the MS learn page: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/cd
+
+What's the difference between type and more reasonably, is there any reason to use type apart from cases where I might want to view all of the text at once or more is disabled for some reason?
+  -  I do find it vaguely amusing that type is nowhere near it's parralel usage in Linux where it's used to identify file types. Instead it's used like the cat command.
+
+Progress on this room has been a lot slower as it's required a certain degree of set up everytime I want to do anywork on it and I've kept on getting interrupted. 
+  -  It also generally takes longer when I'm asking lots of questions and doing more research but that has it's own indelible value. 
