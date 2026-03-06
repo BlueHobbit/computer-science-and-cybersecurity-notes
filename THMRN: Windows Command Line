@@ -1,3 +1,31 @@
+# Summary
+This room feels fairly basic overall covering a broad range of basic commands without using many operators or options that are clearly more broadly available looking at the help pages for the different commands.
+The room used the commands: set, ver, systeminfo, ipconfig, ipconfig /all, netstat, nslookup, ping, tracert, cd, dir, cd .., cd \Users\user, tree, help, mkdir, rmdir, type, more, echo, chkdsk, driverquery, sfc /scannow, tasklist, taskkill, shutdown.
+These are all of the commands I remember. 
+  -  Set on it's own shows a summary of system environmental variables such as PATH but can be used more broadly to modify, delete, and add environment variables to the system. 
+  -  Ver primarily just displays the system version which was a specific version of Windows in this case
+  -  systeminfo displays a broad display of system information much like the summary page of the msinfo32 application. 
+  -  ipconfig displays basic networking information with the /all option displaying a broader range of information such as the specifics of the medium used to connect it to the broader network and whether Hyper-V is being used. 
+  -  netstat displays all of the established network connections and listening ports on the device. However, it won't show the listening ports without using the -a flag as the command on its own will show only established connections such as the sshd connection for the room. -b shows the program associated with the room such as sshd.exe for the port 22 ssh connection. -o shows the process ids related to the connections on the device. -n displays the address information in a numerical form.
+  -  nslookup literally looks up the listed mac and IP addressing information available via the DNS since it literally stands for name service lookup. It's possible to specify the name server that's being checked for the information by following the name that's being checked with that name servers IP address.
+  -  ping sends a small data packet to the intended destination which is a good check for connectivity and transmission speed generally and has a number of diagnostic uses including by utilizing the other command flags which can change the formatting of the ping packet or even specify it's contents.
+  -  tracert traces the route that a packet takes to arrive at it's destination by logging the TTL values being sent back by the nodes on its route. This can end up sometimes with timeout results for the requests for the TTL information which isn't massively helpful and is exactly what occured with this room.
+  -  cd displays the current directory and can be used in conjunction with file paths or the . and .. shorthand to navigate between directories on a windows system. It's a generally useful command.
+  -  dir displays the objects in the current or target directory such as folders and files. The /s flag can be used to display the subdirectories of the target directory as well and the /a command can be used similar to ls -a in linux to view hidden files etc. This isn't in the same graphical form provided by tree which inherently covers all of the sub directories and ignores any files since it's sole purpose is to display the directory tree.
+  -  tree displays a graphical representation of the hierarchy of directories from the current or target directory. It does this until there are no more parent or child directories to be displayed.
+  -  help displays help information for the relevant command but doesn't work with all commands though it will usually point you in the right direction if you use it on a command by telling you it's potential help page syntax such as /?.
+  -  mkdir makes a directory with the given name at the given location
+  -  rmdir removes a directory with the given name at the given location
+  -  type outputs the contents of a text file but doesn't limit it unlike more which restricts the output to a single terminal page at a time with flow controls.
+  -  echo echoes text back to you but is a fast way of creating a text file via the >> operator which writes the echo output to a given file.
+  -  chkdsk checks the integrity of the system's disk(s) by checking for errors, poor use of space, and more.
+  -  driverquery displays information for all of the installed drivers on the system such as their names and areas of function.
+  -  sfc /scannow scans for corruption within the system and attempts to repair it where possible.
+  -  tasklist displays every process on the target system possibly barring those that have been specifically hidden from view. Moreover, it displays the process id of each of those processes and with flags can be used to display some basic information about the process itself. There is also a handy /FI filter flag which is excellent for finding information relating to a specific process with the /? help page providing more information on the filters available to apply. 
+  -  taskkill will kill a process using it's given PID or name. I believe you can also specify the exact signal to be sent to kill the process. 
+  -  shutdown 
+# Notes
+
 I've already gotten started a bit here, first part was SSHing into a windows server by the looks of it. 
 
 set --> Grabs all of the current enviroment variables on the system + can also be used to create, modify, and delete environmental variables. See: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/set_1
