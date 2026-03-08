@@ -1,4 +1,0 @@
-What does it mean that a database is hierarchal, is it just forming a tree structure with hierarchal branches and sectioning?
-
-Yeah it's standard parent node to child node set up, so individual sections spread out into branches similar to the result of running the tree command when it lists all of the child subdirectories. 
-  -  From what I remember this sort of model structure is good for linear relationships between a parent object and child objects with a strict 1-many but not great for more complex relationships where a child might need to link to more than one parent. 
