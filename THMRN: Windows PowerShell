@@ -30,5 +30,12 @@
   -  On the other hand that could really hamper readibility of a script that was written if that's possible.
   -  I wonder if other's have had this idea and whether or not it's possible to run an application or adjusting a setting that will help autocomplete commands so that typing them out is quicker, though I should possibly avoid that function for now to make my learning more effortful.
 
+- How extensively can pipeing be used? Can I chain commands together especially when I might want to filter and then sort for example get-childitem | where-object -property "extension" -eq ".txt" | sort-object name? 
+  - So you can pipe the same object at least multiple times. I think there's a non-technical limit on this thinking about it which is that piping too many commands together is liable to get messy and reduce the understandibility of the command or script being executed.
+
+- Definitely needed a bit of a refresher on ADS randomly turning up, I'm going to read the malware bytes article at a minimum and then do the advent of cyber room that it recommends.
+
+-It definitely feels like there's a colossal amount of other material that could be covered that simply isn't in the scope of the room given the sheer variety of commands available and the combinatorial possibilities of piping with them. 
+
 
 
