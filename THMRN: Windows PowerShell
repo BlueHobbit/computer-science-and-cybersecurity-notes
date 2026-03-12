@@ -1,9 +1,14 @@
 # Summary
--  The room covers a variety of PowerShell commands, and explains the reasoning behind and origins of PowerShell as an application. 
+-  The room covers a variety of PowerShell commands, and explains the reasoning behind and origins of PowerShell as an application. WCL stands for Windows command line. 
 -  The commands I remember and what they do:
   -  get-command displays a list of every available command on the powershell including ones from external modules that have been installed and imported to the session. You can add filters to search for specific commands by type and by name amongst other things. 
-  -  get-alias displays the alias's for various powershell commands which are primarily their command line prompt equivalents. For example, type is the alias for Get-Content which essentially functions in the same way. 
-
+  -  get-alias displays the alias's for various powershell commands which are usually equivalents in other shells such as cd or dir or ls.  
+  -  get-content works in essentially the same way as type or more in WCL. 
+  -  get-help gets the help page for the specified command or if run on it's own the help page for itself. -examples can be added to have examples added to the output. 
+  -  set-location is basically cd but in powershell and you have to use a -path option.
+  -  get-childitem is basically ls but in powershell and you have to use a -path option.
+  -  find-module finds an external powershell module based on the relevant schema supplied using options like -name. -includedependencies is great with this especially when installing applications that have a lot of dependencies to rely on. 
+  -  install-module installs an external module of the given critera primarily name. 
 
 # Notes
 
