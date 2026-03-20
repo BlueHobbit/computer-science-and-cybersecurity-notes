@@ -1,3 +1,6 @@
+# Summary
+
+# Notes
 I've already used active directory when I was completing my cybersecurity project setting up and hardening a Windows Server 2016 VM. 
 
 How does the active directory authentication process work?
