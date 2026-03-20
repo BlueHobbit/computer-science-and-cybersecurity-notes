@@ -1,4 +1,4 @@
-TryHackMe Room Notes: Windows Fundamentals Part 2
+TryHackMe Room Notes | Windows Fundamentals Part 2
 
 - Already part way through with notes in my project workbook. 
 
