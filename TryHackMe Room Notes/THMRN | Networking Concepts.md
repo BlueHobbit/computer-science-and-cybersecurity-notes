@@ -1,8 +1,6 @@
 # Summary
 
 # Notes
-- Oh OSI model how I love you so. I've only "learnt" about you half a dozen times or more. 
-
 - What is IPsec protocol wise with regards to VPN's?
 
 - Same goes for SSL/TLS VPN protocol?
