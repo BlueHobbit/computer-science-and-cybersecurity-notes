@@ -1,4 +1,4 @@
-# computer-science-notes
+# computer-science-and-cybersecurity-notes
 
 Notes for my computer science and cybersecurity learning
 
