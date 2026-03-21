@@ -36,5 +36,6 @@ The reason for not finishing the project:
  
 The secret message:
 - So I ended up finding the secret message before I found the third and fourth flags because I simply navigated through the commits and found the commit where it was removed from later versions which was admittedly quite anti-climactic.
+  - The secret message was simply THM{g1t_h1st0ry_n3v3r_f0rg3ts}.
 
 I did a certain degree of research to complete this room as I wasn't aware about the usage of .patch | .diff for seeing the username of the developer who made the commit. Moreover, I had to look for alternative solutions for the first question after my first two attempts didn't work as expected since the domain itself wasn't registered under DNS anymore but the subdomains had been left running as far as I can tell. 
