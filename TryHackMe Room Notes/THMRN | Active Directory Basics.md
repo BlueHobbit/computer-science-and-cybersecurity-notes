@@ -23,22 +23,21 @@ What are security principals? (I can kind of guess but it's better to have a for
 
 Being able to reset passwords from the active directory users and computers repository is definitely helpful.
 
-What do the additional containers that have shown up pertain to when I enable advanced features view?
-
-What's the formal definition of a container - it seems autological but somehow perhaps unnecessarily technical?
-
 I think I interacted with GPO's during my cybersecurity project but I'm unsure whether I actually applied the policies created to any OU's which is weird because it would have been a clear part of the set up really. 
   -  This may have been some other form of group policy set up that I ended up dealing with but I'm not sure yet what that could have been.
 
 Are there CLI alternatives for opening up group policy manager and the active directory respository?
+  - gpmc.msc opens up the group policy manager console
+  - gpedit.msc opens up the group policy editor, I distinctly remember using this for my cybersecurity project.
+  - dsa.msc opens up the active directory users and computers menu which is the main one this room touches on.
 
 What's the difference between domain and enterprise admins?
-
-Enterprise admins are able to control the system for the enterprise (e.g. multiple trees/a forest) whereas domain admins only control their individual domain tree typically. 
+  - Enterprise admins are able to control the system for the enterprise (e.g. multiple trees/a forest) whereas domain admins only control their individual domain tree typically. 
 
 Okay yeah, I've definitely interacted with group policy management in some way before as the options I'm seeing when it comes to editing the GPO's are ones I've definitely seen and modified before as part of setting up and hardening an MS Server 2016 VM.
 
 Did I just access the group policy management editor directly in some way, is that possible?
+- Yeah I did.
 
 I also remember the explain section for the different policy parts which is really helpful as always.
 
@@ -58,15 +57,18 @@ Yes, there's support for this apparently in the form of WSL (Windows Subsystem f
 Anyway back to GPO's. 
 
 What's a forest in AD (Is it just the name for a collection of users/computers within a domain or maybe even across individual domains)?
+  - A forest is a group of two or more domain trees usually created when organizations or departments merge together.
 
 What does NTLM stand for?
 
-NT LAN manager apparently though I'm not sure what NT stands for. 
+  - NT LAN manager apparently though I'm not sure what NT stands for. New technology is what it stands for, same idea as NTFS (New Technology File System.)
 
 How is the result of the authentication in NTLM kept secure?
+  - So the answer is kind of just it's not, both versions of the system are considered insecure. 
 
 How would you go about setting up a forest and the constituent trees in reality, as this doesn't seem possible in the basic active directory users and computers menu?
-
+  - There's a domain and trust menu I'm fairly sure, this room mostly dealt in the user and computer menu though.
+    
 How are trust relationships authenticated?
 
 How are the privileges and so on of users who are able to access another tree managed by that tree?
